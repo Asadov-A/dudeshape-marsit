@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import img1 from "../../assets/backgrounds/img1.png"
+import img1 from "../../assets/backgrounds/img1.jpg"
 import img2 from "../../assets/backgrounds/img2.jpg"
 import './Abdulloh.css'
 function Abdulloh() {
