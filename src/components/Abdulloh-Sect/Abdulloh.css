@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .ota {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .chap {
+    width: 608px;
+    height: 500px;
+  }
+  
+  .chap h1 {
+    width: 500px;
+    font-weight: 550;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0%;
+  
+    margin-top: 20px;
+  }А
+  
+  .chap p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+  .chap h3 {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+  
+  .chap button {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #402f2c;
+    color: white;
+    border: none;
+  }
+  
+  .ong img {
+    width: 500px;
+    height: 500px;
+  }
+  
+  .pasota {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .paschab img {
+    width: 500px;
+    height: 500px;
+  }
+  .pasong {
+    width: 608px;
+    height: 500px;
+    align-items: center;
+  }
+  .pasong h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    width: 300px;
+    margin-top: 80px;
+  }
+  .pasong p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  margin-top: 50px;
+  }
+  .pasong .ism{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  width: 150px;
+  }
+  
+  
+  /* --- Animatsiya: Chapdan chiqish --- */
+  .chap {
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: chapAnim 1s ease-out forwards;
+  }
+  
+  /* --- Animatsiya: O‘ngdan chiqish --- */
+  .ong {
+    opacity: 0;
+    transform: translateX(80px);
+    animation: ongAnim 1s ease-out forwards;
+  }
+  
+  /* Pastgi qism ham animatsiya bilan chiqadi */
+  .paschab {
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: chapAnim 1s ease-out forwards;
+    animation-delay: .3s;
+  }
+  
+  .pasong {
+    opacity: 0;
+    transform: translateX(80px);
+    animation: ongAnim 1s ease-out forwards;
+    animation-delay: .3s;
+  }
+  
+  /* --- Keyframes --- */
+  @keyframes chapAnim {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes ongAnim {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
+  .footerpas{
+    display: flex;
+    align-items: center;
+    background-color: #FAFAFA;
+    padding: 50px;
+    margin-top: 40px;
+    justify-content: space-around;
+  }
+  
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 20px  ;
+  }
+  .chapf p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    width: 300px;
+    margin-top: 20px;
+  }
+  
+  .ortaf a{
+    display: flex;
+  margin-top: 15px;
+  }
+  
+  .ongf{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  /* FOOTER ANIMATSIYA */
+  
+  /* Yuqori footer – chapdan chiqadi */
+  .footerpas {
+    opacity: 0;
+    transform: translateY(60px);
+    animation: footerTop 1s ease-out forwards;
+    animation-delay: .5s;
+  }
+  
+  /* Pastki footer bo‘limlari */
+  .chapf {
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: chapAnim 1s ease-out forwards;
+    animation-delay: .7s;
+  }
+  
+  .ortaf {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: centerAnim 1s ease-out forwards;
+    animation-delay: .9s;
+  }
+  
+  .ongf {
+    opacity: 0;
+    transform: translateX(80px);
+    animation: ongAnim 1s ease-out forwards;
+    animation-delay: 1.1s;
+  }
+  
+  /* --- ANIMATSIYA KEYFRAMELARI --- */
+  @keyframes footerTop {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes chapAnim {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes ongAnim {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  
+  @keyframes centerAnim {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
